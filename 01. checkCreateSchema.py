@@ -1,4 +1,4 @@
-def check_create_schema(schema, connection):
+def checkCreateSchema(schema, connection):
 
   #--- Check and Create Schema
   # schema: string, name of schema to create or load into
