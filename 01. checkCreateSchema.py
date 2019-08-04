@@ -3,6 +3,8 @@ def checkCreateSchema(schema, connection):
   #--- Check and Create Schema
   # schema: string, name of schema to create or load into
   # connection: string, contining connection details e.g. host=<ip address> dbname=<db name> user=<user name> password=<pass word>
+  
+  import psycopg2
 
   conn = pgclass.psycopg2.connect(connection)
   cursor = conn.cursor()
