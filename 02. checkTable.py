@@ -4,6 +4,8 @@ def checkTable(schema,table,connection):
     # schema: string, name of schema to create or load into
     # table: string, name of table to create or load into
     # connection: string, contining connection details e.g. host=<ip address> dbname=<db name> user=<user name> password=<pass word>
+    
+    import psycopg2
 
     conn = psycopg2.connect(connection)
     cursor = conn.cursor()
